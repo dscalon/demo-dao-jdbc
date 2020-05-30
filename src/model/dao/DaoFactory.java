@@ -7,11 +7,13 @@ import model.dao.impl.SellerDaoJDBC;
 public class DaoFactory {
 
     public static SellerDao createSellerDao() {
+
         return new SellerDaoJDBC(DB.getConnection());
 
     }
 
-    public static DepartmentDao createDepartmentDap(){
+    public static DepartmentDao createDepartmentDao() {
+
         return new DepartmentDAOJDBC(DB.getConnection());
     }
 }

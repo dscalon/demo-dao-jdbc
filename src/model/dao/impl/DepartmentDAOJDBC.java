@@ -135,7 +135,7 @@ public class DepartmentDAOJDBC implements DepartmentDao {
         ResultSet rs = null;
         try{
             st = connection.prepareStatement(
-                    "SELECT  * FROM departament "
+                    "SELECT  * FROM department "
                             + "ORDER BY Name");
 
             rs = st.executeQuery();
